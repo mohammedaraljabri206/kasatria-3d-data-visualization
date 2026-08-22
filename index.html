@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasatria Software Developer</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+
+  <body>
+    <div id="menu">
+
+  <input
+    id="search"
+    type="text"
+    placeholder="Search by name..."
+    autocomplete="off"
+  />
+
+  <select id="country-filter">
+    <option value="">All Countries</option>
+  </select>
+
+  <select id="interest-filter">
+    <option value="">All Interests</option>
+  </select>
+
+  <select id="worth-filter">
+    <option value="">All Net Worth</option>
+    <option value="low">Under $100,000</option>
+    <option value="medium">$100,000 – $199,999</option>
+    <option value="high">$200,000+</option>
+  </select>
+
+  <button id="clear-filters">Clear</button>
+
+  <button id="table">Table</button>
+  <button id="sphere">Sphere</button>
+  <button id="helix">Double Helix</button>
+  <button id="grid">Grid</button>
+  <div id="google-login"></div>
+
+  <div id="user-info" style="display: none;">
+
+  <button id="user-profile-button" type="button">
+
+    <img
+      id="user-photo"
+      alt="User photo"
+      referrerpolicy="no-referrer"
+    />
+
+    <span id="user-name"></span>
+
+    <span class="profile-arrow">▼</span>
+
+  </button>
+
+  <div id="user-dropdown">
+
+    <div class="dropdown-user">
+
+      <img
+        id="dropdown-user-photo"
+        alt="User photo"
+        referrerpolicy="no-referrer"
+      />
+
+      <div>
+        <div id="dropdown-user-name"></div>
+        <div class="dropdown-user-status">Signed in with Google</div>
+      </div>
+
+    </div>
+
+    <button id="sign-out" type="button">
+      Sign Out
+    </button>
+
+  </div>
+
+</div>
+</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
